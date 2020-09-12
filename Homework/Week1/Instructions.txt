@@ -1,0 +1,16 @@
+# Question 1  
+# A square number something like 1, 4, 9, 16, 25, 36 ....
+def question1(n):
+    pass
+    
+print(question1(27)) # should print 25
+print(question1(17)) # should print 16
+print(question1(25)) # should print 25
+
+# Question 2
+def question2(n):
+    pass
+    
+print(question2(17))  # should print 15
+print(question2(35))  # should print 35
+print(question2(36))  # should print 35
