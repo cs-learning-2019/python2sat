@@ -14,3 +14,7 @@ def question2(n):
 print(question2(17))  # should print 15
 print(question2(35))  # should print 35
 print(question2(36))  # should print 35
+
+
+
+We will take this up in class and you can find the solutions under Week2
