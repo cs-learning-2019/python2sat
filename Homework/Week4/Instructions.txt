@@ -1,0 +1,11 @@
+1) Reverse the word
+
+2) Swap the even indexed characters with the odd indexed characters
+
+3) Rearrange the letters into alphabetical order  (Upper case goes first)
+
+4) Determine if the word is a palindrome   palindrome means that the word is the same forwards and in reverse
+  Eg/ racecar
+
+
+5) Make a box with the word (across, down, reversed, up)
