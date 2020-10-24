@@ -1,8 +1,9 @@
 # Python Focus Learning
-# List Review
+# List and Dictionary Review
 # Author: Kavan Lam
-# Date: July 4, 2020
+# Date: Oct 31, 2020
 
+################## LIST ##################
 # Lets start of with the basic operations/functionalities for List
 x = [50, 60, 10, 10, 50, 6, 9]
 print(x[0])
@@ -13,7 +14,6 @@ print(x)
 x[5] = 60
 print(x)
 print("-------------------------------------------")
-
 
 # There are many functions and methods that we can use when it comes to a List. Lets see some of these
 print(len(x))
@@ -28,30 +28,19 @@ print("---------------------------------------")
 for num in x:
     print(num)
 
-print("-----------------------------------------")
 
-# Lets now do it using a while loop
-index = 0
-while index < len(x):
-    print(x[index])
-    index = index + 1
+# Print a list in reverse
 
 
-# Alright now lets use what we learned to split a List of Strings and ints into a List of just Strings and another List of just ints
-y = [1, 4, 6, "Kavan", "John", 50, "Kelly"]
-names = []
-numbers = []
-for thing in y:
-    if type(thing) == type("string"):
-        names.append(thing)
-    else:
-        numbers.append(thing)
+# Make a new list using only the even index from original list
 
-print(names)
-print(numbers)    
 
-print("-----------------------------------------")
-# There is also this call method you can use on Strings called split
-x = "Hello world life is so cool"
-y = x.split(" ")
-print(y[-1])
+# Take a list of numbers and break it down into two list. First list contains all numbers that are less than the average.
+
+
+
+################## Dictionary ##################
+# Again lets see some basic operations with dictionaries and see how they work
+
+
+# Convert a list of names into a dictionary
