@@ -1,7 +1,7 @@
 # Focus Learning: Python Level 2
 # Numbers worksheet
 # Kavan Lam
-# Oct 3, 2020
+# Oct 17, 2020
 
 # Find for strings
 # Find will return -1 if it can not find what you are looking for
@@ -83,5 +83,84 @@ def question4(word):
     print(new_word)
     
 question4("aabbAABBcder")
+
+# Q5
+print("---------------------------------------")
+def question5(word):
+    new_word = word[::-1]
+    print(new_word)
+    
+question5("My Python Code")
+
+
+# Q6
+print("---------------------------------------")
+def question6(word):
+    word_len = len(word)
+    
+    # Lets get all the even characters
+    even = word[::2]
+    
+    # Lets get all the odd characters
+    odd = word[1::2]
+    
+    new_word = list(word)
+    turn = 1
+    for i in range(word_len):
+        if turn == 1:
+            new_word[i] = odd[0]
+            odd = odd[1:]
+        else:
+            new_word[i] = even[0]
+            even = even[1:]
+        turn = turn * -1
+    
+    print("".join(new_word))
+            
+question6("python")
+
+# Q7
+print("---------------------------------------")
+def question7(word):
+    list_of_character = list(word)
+    list_of_character.sort()
+    print("".join(list_of_character))
+    
+question7("python")
+
+# Q8
+print("---------------------------------------")
+def question8(word):
+    if word == word[::-1]:
+        return True
+    else:
+        return False
+    
+print(question8("racecar"))
+
+# Q9
+print("---------------------------------------")
+def question9(word):
+    # The first line
+    print(word)
+    
+    # Fill in the middle lines
+    middle_characters = word[1:-1]
+    for i in range(len(middle_characters)):
+        print(middle_characters[i] + (" " * len(middle_characters)) + middle_characters[len(middle_characters) - i - 1])
+    
+    # The last line
+    print(word[::-1])
+    
+question9("Python")
+
+
+
+
+
+
+
+
+
 
     
