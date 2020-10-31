@@ -22,6 +22,7 @@ print(min(x))
 x.sort()
 print(x)
 print("---------------------------------------")
+# Do not be afriad to search up different functions and method for list
 
 # Lets see how we can loop over Lists using loops
 # Lets start with for loops
@@ -35,12 +36,39 @@ for num in x:
 # Make a new list using only the even index from original list
 
 
-# Take a list of numbers and break it down into two list. First list contains all numbers that are less than the average.
+# Take a list of numbers and break it down into two list. First list contains all numbers that are less than the average. Second list contains all other numbers.
 
+
+# Often times we will have to deal with 2D list (for example a greyscale image)
+# Lets see a simple example of a 2D list and how to index into it
+
+
+# Now lets see how we can find the transpose of a 2D list of numbers assuming the number of rows equals to the cols
+
+
+# Lets see an example of where a 2D list can be helpful to organize data
+# We have a school with many classes and each class have a list of student names
+# So each sublist will represent one class
+# Our goal is to find which class has the most students and which class has the least. We also need the average number of students per class.
+
+
+
+# What about a 3D list? Can anyone think of an example of a 3D list being used?
+# One example of 3D list is ____________________
+
+
+# Alright so 1D lists are actual a lot more powerful than you think. In fact we can use them to 
+# represent something called vectors. What are vectors you ask?
+# Lets calculate the dot product between two vectors
+
+# Lets do the sum of the differences
+
+# Hmmmm what can we do with this?
+# We can actually get a very simple object detection
+# For example we can do faces!
 
 
 ################## Dictionary ##################
+# WE WILL DO THIS NEXT TIME #
 # Again lets see some basic operations with dictionaries and see how they work
-
-
 # Convert a list of names into a dictionary
