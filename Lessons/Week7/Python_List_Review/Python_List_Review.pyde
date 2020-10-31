@@ -29,19 +29,42 @@ print("---------------------------------------")
 for num in x:
     print(num)
 
-
 # Print a list in reverse
-
+print("---------------------------------------")
+x.reverse()
+print(x)
 
 # Make a new list using only the even index from original list
-
+print("---------------------------------------")
+original = [4, 5, 77, 99, 12, 0, 3]
+new_list = []
+for index in range(0, len(original)):
+    if index % 2 == 0:
+        new_list.append(original[index])  # append will add the new thing into the list
+print(new_list)
 
 # Take a list of numbers and break it down into two list. First list contains all numbers that are less than the average. Second list contains all other numbers.
+print("---------------------------------------")
+original = [4, 5, 77, 99, 12, 0, 3]
+first_list = []
+second_list = []
+average_orig = sum(original) / len(original)
+for number in original:
+    if number < average_orig:
+        first_list.append(number)
+    else:
+        second_list.append(number)
+print("The average is " + str(average_orig))
+print("The first list is " + str(first_list))
+print("The second list is " + str(second_list))
 
 
 # Often times we will have to deal with 2D list (for example a greyscale image)
 # Lets see a simple example of a 2D list and how to index into it
-
+print("---------------------------------------")
+x = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(x[1][2])
+print(x[-1][-1])
 
 # Now lets see how we can find the transpose of a 2D list of numbers assuming the number of rows equals to the cols
 
