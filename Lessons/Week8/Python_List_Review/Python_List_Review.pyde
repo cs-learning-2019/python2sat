@@ -67,28 +67,70 @@ print(x[1][2])
 print(x[-1][-1])
 
 # Now lets see how we can find the transpose of a 2D list of numbers assuming the number of rows equals to the cols
+# The transpose is taking all the rows and converting it into cols 
+print("---------------------------------------")
+x = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+row1 = []
+row2 = []
+row3 = []
+
+for sublist in x:
+    row1.append(sublist[0])
+    row2.append(sublist[1])
+    row3.append(sublist[2])
+
+new_x = [row1, row2, row3]
+print(new_x)
 
 
 # Lets see an example of where a 2D list can be helpful to organize data
 # We have a school with many classes and each class have a list of student names
 # So each sublist will represent one class
-# Our goal is to find which class has the most students and which class has the least. We also need the average number of students per class.
+# Our goal is to find which class has the most students.
+print("---------------------------------------")
+classes = [["Ho", "Yo"], ["Bob", "Kim", "Du"], ["Lee"], ["Abby", "Kid", "Ho", "Yo"]]
+most_students = 0
+most_index = 0
 
+classroom_number = 1
+for classroom in classes:
+    if len(classroom) > most_students:
+        most_students = len(classroom)
+        most_index = classroom_number
+    
+    classroom_number = classroom_number + 1
 
+print("Classroom number " + str(most_index) + " has the most students " + str(most_students))
 
 # What about a 3D list? Can anyone think of an example of a 3D list being used?
-# One example of 3D list is ____________________
-
+# One example of 3D list is color images
 
 # Alright so 1D lists are actual a lot more powerful than you think. In fact we can use them to 
 # represent something called vectors. What are vectors you ask?
 # Lets calculate the dot product between two vectors
-
+print("---------------------------------------")
+x = [1, 2, 3]
+y = [4, 5, 0]
+answer = 0
+for i in range(3):
+    answer = answer + (x[i] * y[i])
+    
+print("The dot product is " + str(answer))
+    
 # Lets do the sum of the differences
+x = [2, 5, 6]
+y = [1, 3, 4]
+answer = 0
+for i in range(3):
+    answer = answer + (x[i] - y[i])
+    
+print("The sum of differences is " + str(answer))
 
 # Hmmmm what can we do with this?
 # We can actually get a very simple object detection
 # For example we can do faces!
+
+# We are going to do a project on this very soon
 
 
 ################## Dictionary ##################
