@@ -1,7 +1,7 @@
 # Python Focus Learning
 # List and Dictionary Review
 # Author: Kavan Lam
-# Date: Oct 31, 2020
+# Date: Nov 14, 2020
 
 ################## LIST ##################
 # Lets start of with the basic operations/functionalities for List
@@ -134,15 +134,63 @@ print("The sum of differences is " + str(answer))
 
 
 ################## Dictionary ##################
-# WE WILL DO THIS TODAY #
 # Again lets see some basic operations with dictionaries and see how they work
+print("------------------------------------------------")
+x = {"Bob": 10, "Stacy": 11, "John": 13}  # We no longer use index, instead we use the keys
+print(x["Stacy"])
+print(x["John"])
+print("Johnny" in x)
+# print(x["jahn"])  # You need to make sure the key exist
+x["Yu"] = 35
+x["John"] = 12
+del x["Bob"]
+print(x)
+# In a Python Dictionary the keys are not allowed to be repeated
 
 # Convert a list of names into a dictionary where the values are the frequencies
+print("------------------------------------------------")
+names = ["Ho", "John", "Cat", "Dog", "John", "Ho", "Cat", "John"]
+def convertToDictionary(names):
+    result = {}
+    for name in names:
+        if name in result:
+            result[name] = result[name] + 1
+        else:
+            result[name] = 1
+    
+    print(result)
+
+convertToDictionary(names)
 
 # Remove all the duplicates from a list using a dictionary
+print("------------------------------------------------")
+names = ["Ho", "John", "Cat", "Dog", "John", "Ho", "Cat", "John"]
+def removeDuplicate(names):
+    result = {}
+    for name in names:
+        if name in result:
+            result[name] = result[name] + 1
+        else:
+            result[name] = 1
+    
+    print(result.keys())   # .keys will give you a list of all the keys
+
+removeDuplicate(names)
 
 # Given two dictionaries combine them into one (both dictonaries are str-int pairs)
+print("------------------------------------------------")
+d1 = {"A" : 2, "B": 3, "C": 10}
+d2 = {"C": 2, "A": 3, "D": 2}
+def combineDictionary(d1, d2):
+    for d2_key in d2.keys():
+        if d2_key in d1:
+            d1[d2_key] = d1[d2_key] + d2[d2_key]
+        else:
+            d1[d2_key] = d2[d2_key]
+    
+    print(d1)
 
+combineDictionary(d1, d2)
 # Given a dictonary convert it into a list
 
 # How can we check to see if a key is in a dictionary?
