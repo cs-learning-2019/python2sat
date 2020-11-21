@@ -1,7 +1,7 @@
 # Python Focus Learning
 # List and Dictionary Review
 # Author: Kavan Lam
-# Date: Nov 14, 2020
+# Date: Nov 21, 2020
 
 ################## LIST ##################
 # Lets start of with the basic operations/functionalities for List
@@ -191,13 +191,43 @@ def combineDictionary(d1, d2):
     print(d1)
 
 combineDictionary(d1, d2)
-# Given a dictonary convert it into a list
+
+# Given a dictonary convert it into a list (just use the values)
+print("------------------------------------------------")
+d = {"A" : 2, "B": 3, "C": 10, "D": 2}
+def convertToList(d):
+    return d.values()
+
+print(convertToList(d))
+
 
 # How can we check to see if a key is in a dictionary?
+print("------------------------------------------------")
+d = {"A" : 2, "B": 3, "C": 10, "D": 2}
+def isInDictionary(d, targetKey):
+    return (targetKey in d)
+
+print(isInDictionary(d,  "Z"))
+
 
 # How can we check to see if a value is in a dictionary?
+print("------------------------------------------------")
+d = {"A" : 2, "B": 3, "C": 10, "D": 2}
+def isValueInDictionary(d, targetValue):
+    return (targetValue in d.values())
+    
+print(isValueInDictionary(d,  10))
+
 
 # In processing we can use it to create and store a map of different colors
+colors = {"Red": (255, 0, 0), "Green": (0, 255, 0), "Blue":(0, 0, 255), "Yellow": (255, 255, 0), "Random": (125, 6, 90)}
+def setup():
+    size(900, 900)
+
+def draw():
+    fill(colors["Random"][0], colors["Random"][1], colors["Random"][2])  # colors["Green"]  ---> (0, 255, 0)  then (0, 255, 0) [1] --> 255
+    # fill(0, 255, 0)
+    rect(50, 50, 100, 100)
 
 # Dictionaries have many real world applications
 # 1) Transfering information
