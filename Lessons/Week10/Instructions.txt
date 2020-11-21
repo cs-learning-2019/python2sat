@@ -1,0 +1,6 @@
+Begin talking about the first major project and the concepts required to complete the assignment
+
+1) We will do VERY simple object detection using sum of pixel differences
+2) We can dicuss the other method such as Normalized dot product
+3) We can do finding waldo
+4) We can talk about Neural networks if we have time just for fun
