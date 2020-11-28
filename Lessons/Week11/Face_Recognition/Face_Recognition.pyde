@@ -3,10 +3,34 @@
 # Author: Kavan Lam
 # Date: Nov 28,2020
 
+detect_face = True
 
+def setup():
+    global base_img
+    global test_img
+    
+    size(100, 100)
+    base_img = loadImage("Base.png")
+    test_img = loadImage("Test1.png")
+    
+def draw():
+   global detect_face 
+   
+   if detect_face == True:
+       detectFace()  # We should only do this one time
+       detect_face = False
 
-
-
+def detectFace():
+    global base_img
+    global test_img
+    
+    # We need to now load in the pixels
+    base_img.loadPixels()
+    test_img.loadPixels()
+    
+    # Calculate the Sum of Squared Differences
+    for index in range(len(base_img.pixels)):
+        # We will save this for next class
 
 
 
