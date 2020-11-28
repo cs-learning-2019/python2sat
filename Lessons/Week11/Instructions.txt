@@ -1,0 +1,19 @@
+Ok lets begin the super simple object detection. I will write most of the code and
+I will try to explain all of it.
+
+1) Review sum of differences and explain how this can be improved by using
+   sum of squared differences
+
+2) Discuss how images are loaded into Processing and how the pixels are managed.
+   To be specific we need to discuss how the pixels are stored in memory
+
+3) Now lets take a look at the data set. Notice that dimensions of the images.
+
+4) Discuss how the sum of squared differences will work on the images.
+   Specifically we need to mention the built in brightness function provided by processing
+
+5) Write the code.
+
+6) Test the code with the test images
+
+7) Explain a new method using the Normalized Cross Correlation (dot product) and assigne for HW
