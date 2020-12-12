@@ -1,0 +1,7 @@
+7) Explain a new method using the Normalized Cross Correlation (dot product) and assigne for HW
+
+8) Talk about neural net if we have time
+
+9) Start talking about the interactive screen saver project
+
+10) Show some code for animation and user interations

@@ -1,0 +1,2 @@
+Change the face detection program to use normalized cross correlation (NCC).
+Make sure you tested it to see if it works!!!
