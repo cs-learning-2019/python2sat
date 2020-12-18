@@ -1,10 +1,11 @@
 # Image Processing
 # Simple Face Recognition
 # Author: Kavan Lam
-# Date: Dec 5, 2020
+# Date: Dec 12, 2020
 
 detect_face = True
-threshold = 19000000  # The ssd must not pass this value
+ssd_threshold = 19000000  # The ssd must not pass this value
+ncc_threshold = 0.7  ###### YOU MIGHT WANT TO CHNAGE THE THRESHOLD
 
 def setup():
     global base_img
@@ -12,7 +13,7 @@ def setup():
     
     size(100, 100)
     base_img = loadImage("Base.png")
-    test_img = loadImage("newTest1.jpg")
+    test_img = loadImage("Test1.png")
     
 def draw():
    global detect_face 
@@ -24,13 +25,14 @@ def draw():
 def detectFace():
     global base_img
     global test_img
-    global ssd
+    global ssd_threshold
     
     # We need to now load in the pixels
     base_img.loadPixels()
     test_img.loadPixels()
     
-    # Calculate the Sum of Squared Differences
+    """
+    # Calculate the Sum of Squared Differences (SSD)
     ssd = 0  # If the ssd is very big then the images are not the same
     for index in range(len(base_img.pixels)):
         brightness_base_px = brightness(base_img.pixels[index])
@@ -38,9 +40,18 @@ def detectFace():
         diff = brightness_base_px - brightness_test_px
         sqaure_diff = diff * diff
         ssd = ssd + sqaure_diff
-        
-    
-    if ssd <= threshold:
+    if ssd <= ssd_threshold:
         print("Same person")
     else:
         print("Not the same person")
+    """
+    
+    # Now try to use NCC and tell my if it is the same person or not
+        
+        
+        
+""" EXTRA TIPS
+print(sqrt(174))   You can calculate the square root using the sqrt function
+
+Do not forget to convert number to float before dividing otherwise you might get zero  For example, print(float(16) / float(17))
+"""

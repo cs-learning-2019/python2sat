@@ -1,0 +1,5 @@
+1) Take up the HW
+
+2) Start talking about the interactive screen saver project
+
+3) Show some code for animation and user interations
