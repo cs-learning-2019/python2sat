@@ -16,3 +16,31 @@ Here is what our project needs.
      - When a bubble is popped there should be a sound effect
 
 4) Any other good ideas???
+
+
+# Hint on how to spawn bubbles over time
+timer = 5000
+def draw():
+    timer = timer - 1
+    if timer <= 0:
+        spawn_circle()
+        timer = 5000
+    
+    # Go through the 8 python lists and draw all the circles
+    for index in range(0, len(x)):
+        DRAW THE CIRCLE
+        ellipse(x[index], y[index], blah blah blah )
+
+
+# Hint on how to generate random position for the bubbles
+x = []
+y = []
+def spawn_circle():
+    # First we need to generate the x and y positions
+    temp_x = int(random(0, 900)) # Assuming you do size(900, 900)
+    temp_y = int(random(0, 900)) # Assuming you do size(900, 900) 
+    
+    x.append(temp_x)
+    y.append(temp_y) 
+
+    # Blah blah blah  
