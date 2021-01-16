@@ -1,0 +1,46 @@
+We will now start our final project for the term.
+This project will have a less serious feel compared to the last project which was face detection.
+Our final project will be an interactive screen saver similar to the one with bubbles in the Windows OS.
+
+Here is what our project needs.
+1) Bubbles will spawn onto the screen. Each time you press UP arrow a new bubble spawns. A bubble gets popped when you press DOWN arrow.
+     - When a bubble spawns it will have a random color, radius, direction and speed (what is the relationship between direction and speed???)
+     - Bubbles need to be somewhat transparent
+     - We will need multiple arrays to store all the required data for the bubbles
+
+2) The bubbles will need to bounce off the four walls.
+     - A simple way to do this is just to loop through all the bubbles and modify the directions accordingly
+     - Bubbles do not need to bounce away from each other (unrealistic)
+
+3) A bubble can be popped/removed by clicking on it with the mouse
+     - When a bubble is popped there should be a sound effect
+
+4) Any other good ideas???
+
+
+# Hint on how to spawn bubbles over time
+timer = 5000
+def draw():
+    timer = timer - 1
+    if timer <= 0:
+        spawn_circle()
+        timer = 5000
+    
+    # Go through the 8 python lists and draw all the circles
+    for index in range(0, len(x)):
+        DRAW THE CIRCLE
+        ellipse(x[index], y[index], blah blah blah )
+
+
+# Hint on how to generate random position for the bubbles
+x = []
+y = []
+def spawn_circle():
+    # First we need to generate the x and y positions
+    temp_x = int(random(0, 900)) # Assuming you do size(900, 900)
+    temp_y = int(random(0, 900)) # Assuming you do size(900, 900) 
+    
+    x.append(temp_x)
+    y.append(temp_y) 
+
+    # Blah blah blah  
