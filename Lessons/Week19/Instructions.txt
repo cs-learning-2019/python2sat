@@ -1,0 +1,6 @@
+Projectile Motion Project
+- Explain the overall algorithm. 1) Initialise 2) Render 3) Advance system forwards in time
+- We can do this at the beginning of term 2 as a review of Python
+- Use the equations for 2D projectile motion to animate a ball flying through the air
+- As homework get the students to use sin as the function and see the animation now
+- Give them a talk about more advanced physics based simulations (if you like then take Python CCC)
