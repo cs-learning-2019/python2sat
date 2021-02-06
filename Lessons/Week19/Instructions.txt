@@ -4,3 +4,9 @@ Projectile Motion Project
 - Use the equations for 2D projectile motion to animate a ball flying through the air
 - As homework get the students to use sin as the function and see the animation now
 - Give them a talk about more advanced physics based simulations (if you like then take Python CCC)
+
+
+Note: we can flip axis by doing
+def draw():
+    scale(1, -1)
+    translate(0, -900)
