@@ -1,0 +1,23 @@
+Lesson Plan
+
+We will be continuing our discussion about Projectile motion and more complex motion in general.
+Remember that Desmos is very useful https://www.desmos.com/calculator
+
+1) Quick review of last class where I introduced the idea that equations can be used to determine
+   how an object moves
+
+2) Lets just take a step back and program some equations (this is very easy)
+
+3) Alright back to making things move!
+   - Lets me introduce you to the equations for projectile motion
+   - Ok using these equation(s) can we model a ball flying through the air?
+
+4) What other types of equations can we use? 
+   How can we make something move in a circle? 
+   What about a wave?
+
+
+Note: we can flip axis by doing
+def draw():
+    scale(1, -1)
+    translate(0, -900)

@@ -1,0 +1,13 @@
+The following is what you need to do for homework. You will need to write code to make a ball move
+in cool ways.
+
+Question 1:
+Write a program in Processing that makes a ball move from the bottom left to the top right corner
+of the screen in a wave. Hint: You should know how to make the ball move diagonally in a straight
+line and you should also know how to make the ball move in a wave. So combine the two together.
+
+Question 2:
+Design a cool equation to make a ball move in a crazy way and program it. Hint: use https://www.desmos.com/calculator
+to help you design a cool equation. 
+
+Please remember to save your work. You will have to submit your code to me next class. Good Luck.
