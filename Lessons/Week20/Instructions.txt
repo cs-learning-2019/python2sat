@@ -11,10 +11,13 @@ Remember that Desmos is very useful https://www.desmos.com/calculator
 3) Alright back to making things move!
    - Lets me introduce you to the equations for projectile motion
    - Ok using these equation(s) can we model a ball flying through the air?
+   - What about a ball dropping vertically?
 
 4) What other types of equations can we use? 
    How can we make something move in a circle? 
    What about a wave?
+
+5) Ok back to circles... we can think of circles in polar coordinates
 
 
 Note: we can flip axis by doing
