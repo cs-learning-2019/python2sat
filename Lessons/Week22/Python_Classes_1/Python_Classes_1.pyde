@@ -1,7 +1,7 @@
 # Focus Learning: Python Level 2
 # Python Classes
 # Kavan Lam
-# Feb 19, 2021
+# March 6, 2021
 
 """
 We already learned about the different data types in Python. For example, str, float, bool, int and list.
@@ -30,36 +30,38 @@ class Person:
 
     def get_height(self):
         return self.person_height
-
-    def __lt__(self, other_person):
-        if self.age < other_person.age:
-            return True
-        else:
-            return False
-
+    
     def __eq__(self, other_person):
         if self.age == other_person.age:
             return True
         else:
             return False
+    
+    def __lt__(self, other_person):
+        if self.age < other_person.age:
+            return True
+        else:
+            return False
+        
+    def __str__(self):
+        return "Hi my name is " + self.name
 
     def __len__(self):
         return self.person_height
-
-    def __str__(self):
-        return "Hi my name is " + self.name
 
 john = Person(10, "Jonny", 130)
 joy = Person(10, "Joy", 131)
 print(john.get_age())
 print(joy.get_age())
+
 if john == joy:
     print("They are the same age!")
 else:
     print("They are not the same age")
+    
 print(john)
 print(len(john))
-    
+
 """
 Alright looks a bit confusing right? No worries we will go through each piece.
 To tell Python that you want to define a new object you use the "class" keyword.
@@ -98,22 +100,23 @@ class Course:
 
     def print_student_names(self):
         print(self.student_names)
+    
 
 """
-Lets use our class and see if everything works as expected
+#Lets use our class and see if everything works as expected
 """
 a_course = Course("ICS4U")
+b_course = Course("MAT4U")
 a_course.add_student("zBob")
 a_course.add_student("Lee")
 a_course.add_student("Ding")
 a_course.add_student("Dong")
 a_course.print_student_names()
 
-
 print("------------------------------------------------")
 """
-Write and design a class called AreaFinder. AreaFinder will have one method for each shape.
-AreaFinder needs to be able to take care of circles, rectangles and triangles.
+#Write and design a class called AreaFinder. AreaFinder will have one method for each shape.
+#AreaFinder needs to be able to take care of circles, rectangles and triangles.
 """
 class AreaFinder:
     def get_area_rec(self, height, width):
@@ -126,4 +129,4 @@ class AreaFinder:
         return (base * height) // 2
 
 x = AreaFinder()
-print (x.get_area_rec(6, 10))
+print(x.get_are_trianlge(6, 10))
