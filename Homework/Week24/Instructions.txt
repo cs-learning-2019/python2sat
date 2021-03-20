@@ -1,0 +1,18 @@
+Please read over the hospital, person and virus example that we covered in class.
+Make sure you fully understand this example.
+Now I want you to add a few things to the code.
+
+1) Add a new method into Hospital.py called add_money. This method will take one
+number representing how much extra money to give to the hospital. The method will
+add the extra money to the hospital's money attribute.
+
+2) Add the __eq__ special method into Person.py which will allow you to compare
+two people. Two people are the same if they have the same name, age and viruses.
+
+3) Add the __len__ special method into Virus.py which will allow you to use the
+len() command to find out how much the cure cost is. For example, if I do print(len(ebola))
+then it should print 1000.
+
+After you have made these three changes please copy and paste ALL of the code into a single
+file. You will submit this single file to me so I can check your homework. The reason for
+this is so that you do not need to submit three different files to me.
