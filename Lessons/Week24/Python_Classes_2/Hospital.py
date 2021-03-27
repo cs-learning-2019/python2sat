@@ -4,6 +4,9 @@ class Hospital():
         self.money = money
         self.patients = []
         self.cures = []
+        
+    def add_money(self, extra_money):
+        self.money = self.money + extra_money
 
     def buy_cure(self, the_virus):
         if self.money >= the_virus.cure_cost:

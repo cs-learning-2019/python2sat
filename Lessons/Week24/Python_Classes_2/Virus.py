@@ -12,3 +12,6 @@ class Virus:
             return True
         else:
             return False
+    
+    def __len__(self):
+        return self.cure_cost

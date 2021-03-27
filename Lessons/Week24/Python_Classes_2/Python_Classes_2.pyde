@@ -48,6 +48,7 @@ sam.infect(bump)
 # Create the hospital and buy cures
 print("----------------------------------------")
 hs = Hospital("GG HS", 4000)
+hs.add_money(1)
 hs.buy_cure(lump)
 hs.buy_cure(covid)
 hs.buy_cure(ebola)

@@ -1,0 +1,12 @@
+Answer the following questions. You may search up how to do things with datetime if you do
+not know how to use it. So do not be afraid to use Google.
+
+1) Write a function which prints out what the time would be 30min in the furture
+
+2) Write a function that prints out a sad message if it is monday and a happy message if
+it is Friday. In all other cases just print "Ok day"
+
+3) Write code to determine how many frames a second Processing is running your project.
+   Basically you need to determine how many times the draw section is called in a second.
+   For your draw section please only draw one random rectangle and nothing else. Your setup
+   section will just be the size(900, 900) command. 
