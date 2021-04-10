@@ -1,0 +1,9 @@
+1) Take up datetime HW
+2) Begin new project
+Simple Alarm Clock Project
+- Make a clock class
+- import datetime
+- Use arrow keys to set a timer
+- Space to start the timer
+- Space to stop the timer
+- Space to reset the timer
