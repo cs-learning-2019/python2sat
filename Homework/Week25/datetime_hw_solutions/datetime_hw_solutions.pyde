@@ -11,12 +11,15 @@ def future_30():
     print(new_time.strftime("%I:%M%p"))
     
 future_30()
+"""
 
+"""
 # Question 2
 print("----------------------------------------")
 def day_message():
     current_time = dt.datetime.now()
     day_name = current_time.strftime("%A")
+    print("Today is " + day_name)
     if day_name == "Monday":
         print("Sad message")
     elif day_name == "Friday":
@@ -25,6 +28,7 @@ def day_message():
         print("ok day")
     
 day_message()
+
 """
 
 # Question 3
@@ -35,7 +39,8 @@ done = False
 
 def setup():
     size(900, 900)
-    #frameRate(60)
+    frameRate(60)
+    print("The target frame rate is " + str(frameRate))
 
 def draw():
     global frames
@@ -48,5 +53,5 @@ def draw():
     end_time = dt.datetime.now()
     delta_time = end_time - start_time
     if delta_time.total_seconds() >= 1 and done == False:
-        print(frames)
+        print("The measured or actual frame rate is " + str(frames))
         done = True
