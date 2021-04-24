@@ -1,0 +1,12 @@
+1) Re-introduce the simple alarm clock project
+2) Begin new project
+Simple Alarm Clock Project
+- Make a clock class
+- import datetime
+- Use arrow keys to set a timer
+- Space to start the timer
+- Space to stop the timer
+- Space to reset the timer
+3) Show students how to get started
+4) Remainder of class time to be spent working on project
+5) Next week I will talk more about how to get started with the alarm portion
