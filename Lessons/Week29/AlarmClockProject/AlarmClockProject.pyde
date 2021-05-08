@@ -34,7 +34,7 @@ def draw_clock():
     clock.update_time()
     
     # Clear the previous frame and set the background
-    if clock.is_afternoon():
+    if clock.is_afternoon() == True:
         background(0, 0, 200)
     else:
         background(200, 250, 0)
@@ -118,8 +118,6 @@ def draw_alarm_clock():
     elif setting == 6:
         line(350, 335, 480, 335)
     popStyle()
-    
-        
     
 def keyPressed():
     global mode
