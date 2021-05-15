@@ -27,7 +27,10 @@ class AlarmClock:
         self.Year = current_time.strftime("%Y")
     
     def isAlarmClockSet(self):
-        return self.isSet
+        if self.isSet == True:
+            return True
+        else:
+            return False
     
     def startAlarm(self):
         self.isSet = True
@@ -42,7 +45,7 @@ class AlarmClock:
         targetTime = datetime.datetime.strptime(self.Hour + "/" + self.Min + "/" + self.Sec + "/" + self.AM_PM + "/" + self.Month + "/" + self.Day + "/" + self.Year, "%I/%M/%S/%p/%B/%d/%Y")
         delta = targetTime - current_time
         
-        if abs(delta.total_seconds()) < 0.5:
+        if delta.total_seconds() < 0.2:
             return [True, 1.0]
         else:
             delta2 = targetTime - self.startTime

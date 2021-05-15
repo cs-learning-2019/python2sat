@@ -76,7 +76,7 @@ def draw_alarm_clock():
     popStyle()
     
     # Check alarm
-    if alarmClock.isAlarmClockSet():
+    if alarmClock.isAlarmClockSet() == True:
         result = alarmClock.timeTargetReached()
         if result[0] == True:
             print("Boom")
