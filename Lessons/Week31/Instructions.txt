@@ -1,4 +1,4 @@
-We will have a quick lesson on reading and writing text files
+We will have a quick lesson on reading and writing text files  https://www.w3schools.com/python/python_file_open.asp and https://www.w3schools.com/python/python_file_write.asp
 
 Introduce the final project
 Final Project Rules
@@ -6,7 +6,7 @@ Final Project Rules
 2) If you copy any code you first must fully understand it
 3) You have until the end of the term to finish
 4) Ideas are up to you but you must inform me of your idea so I can approve of it
-5) You must use Python and Processing
+5) You must use Python and Processing (Processing is optional)
 6) You are free to talk to me and get help on coding anytime during class
 7) No you do not need to use classes, but I highly recommend it. In Python CCC you will have to use classes.
 
