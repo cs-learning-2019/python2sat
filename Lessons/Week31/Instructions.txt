@@ -1,0 +1,17 @@
+We will have a quick lesson on reading and writing text files
+
+Introduce the final project
+Final Project Rules
+1) You are allowed to look things up to help you but the end product must be your own
+2) If you copy any code you first must fully understand it
+3) You have until the end of the term to finish
+4) Ideas are up to you but you must inform me of your idea so I can approve of it
+5) You must use Python and Processing
+6) You are free to talk to me and get help on coding anytime during class
+7) No you do not need to use classes, but I highly recommend it. In Python CCC you will have to use classes.
+
+Sample Ideas that you are free to use (these ideas are what I consider reasonable for your skill level)
+1) Space Invaders [video game]
+2) Frogger [video game]
+3) Python Video Filter [You will need to do some research on OpenCV --- This idea is a bit harder]
+4) Photo Show [A program that present a bunch of photos in a slide show format]
